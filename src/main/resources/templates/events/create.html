@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Create an Event</title>
+</head>
+<body>
+    <h1>Create an Event</h1>
+    <nav th:replace="fragments :: navigation"></nav>
+
+    <form method="post" action="/events/create">
+        <input type="text" name="title">
+        <input type="submit" value="Create Event">
+    </form>
+</body>
+</html>

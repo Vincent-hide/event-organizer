@@ -6,6 +6,9 @@
 </head>
 <body>
     <h1>All Events</h1>
+    <nav th:replace="fragments :: navigation"></nav>
+    <!-- unless: opposite of if statement  -->
+    <p th:unless="${events} and ${events.size()}">No Events Found</p>
 
     <nav>
         <ul>
