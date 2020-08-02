@@ -8,8 +8,12 @@
         <h1>Create an Event</h1>
         <form method="post" action="/events/create">
             <div class="input-field col s12">
-                <input placeholder="Event Title" id="first_name" type="text" name="title" class="validate">
-                <label for="first_name">Title</label>
+                <input placeholder="Event Title" id="title" type="text" name="title" class="validate">
+                <label for="title">Title</label>
+            </div>
+            <div class="input-field col s12">
+                    <input placeholder="Description" id="description" type="text" name="description" class="validate">
+                    <label for="description">Title</label>
             </div>
             <input class="waves-effect waves-light btn" type="submit" value="Create Event">
         </form>

@@ -12,13 +12,15 @@
 
         <table class="table highlighted">
             <thead>
-                <tr>
+                <tr class="striped">
                     <th>Event Title</th>
+                    <th>Event Description</th>
                 </tr>
             </thead>
             <tbody>
                 <tr th:each="event : ${events}">
-                    <td th:text="${event}"></td>
+                    <td th:text="${event.title}"></td>
+                    <td th:text="${event.description}"></td>
                 </tr>
             </tbody>
         </table>
